@@ -1,0 +1,19 @@
+                                           coding style 
+                                           
+                                           
+                                           
+        1 :::      remeber we whant this lib to be fast so don't use useless variables like
+                                  int a = getsomething();
+                                  func(a);                  
+                                         
+                                          do 
+                                  func(getsomething());
+                                  
+        2 :::       for every function name for every word in the name the first leter must be uppercase
+                    geters and seters lowercase
+                                                      |  void getSomeValue()
+                                                      |{
+                                                      |   // do things
+                                                      |}
+                                                      |
+                                                      
