@@ -2,13 +2,18 @@
               
 #ifndef WINDOW
 #define WINDOW
-
+#include <GLFW/glfw3>
+#include <SGL_Vector.h>
 class SGLwindow
 {
   public:
-    void open();
+    void open(SGLvector vec , std::string title)
+    {
+      window = glfwCreateglfwCreateWindow( vec.get_x	, vec.get_y , title.c_str() , NULL , NULL) 		
+    }
   
   private:
+    GLFWwindow * window;
 };
 
 #endif // WINDOW
