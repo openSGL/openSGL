@@ -13,7 +13,7 @@ class SGLwindow
     }
     void SGLsetWindowSize(uint32_t x , uint32_t y)
     {
-      glfwsetWindowSize(x,y);
+      glfwsetWindowSize(window , x , y);
     }
   
   private:
